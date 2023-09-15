@@ -133,7 +133,7 @@ export async function recoverSigningAddress(
         type: 'tendermint/PubKeySecp256k1',
         value: toBase64(Secp256k1.compressPubkey(recoveredPubKey)),
       },
-      'cosmos'
+      'orb'
     );
   } catch {
     return null;
